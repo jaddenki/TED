@@ -11,7 +11,7 @@ public class CharmTest : MonoBehaviour
     Color orange = new Color(0.784f, 0.29f, 0.122f);
     Color yellow = new Color(0.886f, 0.82f, 0.08f);
     Color green = new Color(0.216f, 0.514f, 0.153f);
-    Color blue = new Color(0.376f, 0.094f, 0.584f);
+    Color blue = new Color(0.037f, 0.094f, 0.584f);
     Color purple = new Color(0.5f, 0, 0.5f);
     public int colorNumber = 7;
 

@@ -10,6 +10,7 @@ public class CheckOrCrossScript : MonoBehaviour
     private RawImage rawImage;
     private CharmTest int_script;
     private ImageController int_script2;
+    public int mistakes = 0;
 
     void Start()
     {
@@ -19,9 +20,12 @@ public class CheckOrCrossScript : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        while (mistakes < 3) //Add "if mistakes less than 3 OR if win condition met later
         {
-            checkForCorrect();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                checkForCorrect();
+            }
         }
     }
     public void checkForCorrect()
@@ -35,6 +39,8 @@ public class CheckOrCrossScript : MonoBehaviour
         {
             RawImage rawImage = GetComponent<RawImage>();
             rawImage.texture = imageArray[1].texture;
+            mistakes++;
+            Debug.Log(mistakes);
         }
     }
 }
