@@ -11,11 +11,8 @@ public class CharmTest : MonoBehaviour
 
     void Start()
     {
-        ren = GetComponent<Renderer>();
-        ren.material.color = Color.clear;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -23,60 +20,30 @@ public class CharmTest : MonoBehaviour
             ren = GetComponent<Renderer>();
             ren.material.color = Color.red;
         }
-        if (Input.GetKeyUp(KeyCode.R))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
-        }
         if (Input.GetKeyDown(KeyCode.O))
         {
             ren = GetComponent<Renderer>();
             ren.material.color = orange;
-        }
-        if (Input.GetKeyUp(KeyCode.O))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
             ren = GetComponent<Renderer>();
             ren.material.color = Color.yellow;
         }
-        if (Input.GetKeyUp(KeyCode.Y))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
-        }
         if (Input.GetKeyDown(KeyCode.G))
         {
             ren = GetComponent<Renderer>();
             ren.material.color = Color.green;
-        }
-        if (Input.GetKeyUp(KeyCode.G))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
             ren = GetComponent<Renderer>();
             ren.material.color = Color.blue;
         }
-        if (Input.GetKeyUp(KeyCode.B))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
-        }
         if (Input.GetKeyDown(KeyCode.P))
         {
             ren = GetComponent<Renderer>();
             ren.material.color = purple;
-        }
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.clear;
         }
     }
 }
