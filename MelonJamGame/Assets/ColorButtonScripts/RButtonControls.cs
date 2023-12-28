@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonControls : MonoBehaviour
+public class RButtonControls : MonoBehaviour
 {
     Renderer ren;
 
