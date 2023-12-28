@@ -1,5 +1,5 @@
 # T.E.D.
-Game created in 3 days in Unity for Winter MelonJam 2023 following the theme of [].
+Game created in 3 days in Unity for Winter MelonJam 2023 following the theme of Charm.
 Help the T.E.D. that we all love do his job so he doesn't get thrown out and replaced by another T.E.D.!
 
 What does T.E.D. even stand for?
