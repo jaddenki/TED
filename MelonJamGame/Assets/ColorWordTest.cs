@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ImageController : MonoBehaviour
 {
+    public int randomIndex;
     public Sprite[] imageArray;
     private RawImage Rawimage;
 
@@ -17,7 +18,7 @@ public class ImageController : MonoBehaviour
     {
         RawImage rawImage = GetComponent<RawImage>();
 
-        int randomIndex = Random.Range(0, 5);
+        randomIndex = Random.Range(0, 5);
 
         rawImage.texture = imageArray[randomIndex].texture;
     }
