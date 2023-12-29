@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro2.unity
     guid: 7b93dcf12832a5847b49bb8ab7a8500d
+  - enabled: 1
+    path: Assets/Scenes/WompWomp.unity
+    guid: dc55dc09920d646cbbd157d16f8cbde5
+  - enabled: 1
+    path: Assets/Scenes/yay.unity
+    guid: 7308803eeb5934dbbb2386bbeb2b85af
   m_configObjects: {}

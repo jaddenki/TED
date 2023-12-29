@@ -2,57 +2,81 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheckOrCrossScript : MonoBehaviour
 {
-    public GameObject number, number2;
+    public GameObject number, number2, number3;
     public Sprite[] imageArray;
     private RawImage rawImage;
     private CharmTest int_script;
-    private ImageController int_script2;
-    public int mistakes = 0;
-    public int i = 0;
+    private ImageController int_script2, displayControl;
+    private TimerScript timer_script, timer_running;
+    public int mistakes, successes = 0;
+    public bool checking = false;
 
     void Start()
     {
         int_script = number.GetComponent<CharmTest>();
         int_script2 = number2.GetComponent<ImageController>();
+        timer_running = number3.GetComponent<TimerScript>();
+        displayControl = number2.GetComponent<ImageController>();
     }
-    
+
     void Update()
     {
-
-    void gameplay()
+        if(mistakes >= 3)
         {
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Invoke("checkForCorrect", 0.2f);
-                Debug.Log("worked");
-                Invoke("delay", 0.8f);
-            }
+            SceneManager.LoadScene("WompWomp");
         }
-
+        if(successes >= 20)
+        {
+            SceneManager.LoadScene("yay");
+        }
+        timer_script = number3.GetComponent<TimerScript>();
+        if(timer_script.timeLeft <= 0)
+        {
+            CheckForCorrect();
+            StartCoroutine(Reaction());
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && checking == false)
+        {
+            Debug.Log("Space key pressed");
+            CheckForCorrect();
+            StartCoroutine(Reaction());
+        }
     }
-    public void checkForCorrect()
+
+    IEnumerator Reaction()
     {
+        timer_running.isTimeRunning = false;
+        timer_script.timeLeft = 0.001f;
+        checking = true;
+        yield return new WaitForSeconds(2.0f);
+        checking = false;
+        rawImage = GetComponent<RawImage>();
+        rawImage.texture = imageArray[2].texture;
+        timer_script.timeLeft = 5f;
+        timer_running.isTimeRunning = true;
+        displayControl.display = true;
+        Debug.Log("Delay started");
+        Debug.Log("Delay finished");
+    }
+
+    void CheckForCorrect()
+    {
+        rawImage = GetComponent<RawImage>();
         if (int_script.colorNumber == int_script2.randomIndex)
         {
-            RawImage rawImage = GetComponent<RawImage>();
             rawImage.texture = imageArray[0].texture;
+            successes++;
+            Debug.Log("Successes: " + successes);
         }
         else
         {
-            RawImage rawImage = GetComponent<RawImage>();
             rawImage.texture = imageArray[1].texture;
             mistakes++;
-            Debug.Log(mistakes);
+            Debug.Log("Mistakes: " + mistakes);
         }
-    }
-    public void delay()
-    {
-        RawImage rawImage = GetComponent<RawImage>();
-        rawImage.texture = imageArray[2].texture;
-        Debug.Log("Worked2");
     }
 }

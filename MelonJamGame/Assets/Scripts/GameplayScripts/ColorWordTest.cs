@@ -8,18 +8,23 @@ public class ImageController : MonoBehaviour
     public int randomIndex;
     public Sprite[] imageArray;
     private RawImage Rawimage;
+    public bool display = true;
 
-    private void Start()
+    private void Update()
     {
-        DisplayRandomImage();
+        if(display == true)
+        {
+            DisplayRandomImage();
+        }
     }
 
     public void DisplayRandomImage()
     {
         RawImage rawImage = GetComponent<RawImage>();
 
-        randomIndex = Random.Range(0, 5);
+        randomIndex = Random.Range(0, 6);
 
         rawImage.texture = imageArray[randomIndex].texture;
+        display = false;
     }
 }
