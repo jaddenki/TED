@@ -26,6 +26,6 @@ public class TitleAnimation : MonoBehaviour
             poo = 2;
 
         // Move to the next frame index
-        currentFrameIndex = (currentFrameIndex + 1) % poo;
+        currentFrameIndex = (currentFrameIndex + 1) % Idle.Length;
     }
 }
