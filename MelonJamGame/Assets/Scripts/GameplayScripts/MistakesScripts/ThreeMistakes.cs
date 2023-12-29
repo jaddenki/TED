@@ -8,7 +8,7 @@ public class ThreeMistakes : MonoBehaviour
     Image image;
     public GameObject numberthree;
     private TwoMistakes threemistakes_script;
-    public int o = 0;
+    public int p = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class ThreeMistakes : MonoBehaviour
     {
         if (threemistakes_script.o == 3)
         {
-            image.color = Color.clear;
+            image.color = Color.white;
         }
     }
 }
