@@ -10,7 +10,6 @@ public class TitleAnimation : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private int currentFrameIndex = 0;
-    private int poo;
 
     void Start()
     {
@@ -23,7 +22,6 @@ public class TitleAnimation : MonoBehaviour
 
 
             spriteRenderer.sprite = Idle[currentFrameIndex];
-            poo = 2;
 
         // Move to the next frame index
         currentFrameIndex = (currentFrameIndex + 1) % Idle.Length;

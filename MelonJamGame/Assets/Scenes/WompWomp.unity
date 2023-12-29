@@ -544,14 +544,14 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 1.94
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -657,13 +657,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe893829076cd7049be78a2cae89f2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textMeshPro: {fileID: 0}
+  _textMeshPro: {fileID: 1394158991}
   stringArray:
   - 0
-  - '          '
+  - '             '
   - '> Sorry....'
   timeBtwnChar: 0.056
-  timeBtwnWords: 3
+  timeBtwnWords: 3.7
 --- !u!114 &1394158991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '> Sorry...'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
   m_sharedMaterial: {fileID: -2896773160166199406, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
