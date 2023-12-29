@@ -11,6 +11,7 @@ public class CheckOrCrossScript : MonoBehaviour
     private CharmTest int_script;
     private ImageController int_script2;
     public int mistakes = 0;
+    public int i = 0;
 
     void Start()
     {
@@ -20,12 +21,18 @@ public class CheckOrCrossScript : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+    void gameplay()
         {
-            Invoke("checkForCorrect", 0.2f);
-            Debug.Log("worked");
-            Invoke("delay", 0.8f);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Invoke("checkForCorrect", 0.2f);
+                Debug.Log("worked");
+                Invoke("delay", 0.8f);
+            }
         }
+
     }
     public void checkForCorrect()
     {
