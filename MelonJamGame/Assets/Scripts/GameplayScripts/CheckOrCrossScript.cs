@@ -20,12 +20,11 @@ public class CheckOrCrossScript : MonoBehaviour
     
     void Update()
     {
-        while (mistakes < 3) //Add "if mistakes less than 3 OR if win condition met later
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                checkForCorrect();
-            }
+            Invoke("checkForCorrect", 0.2f);
+            Debug.Log("worked");
+            Invoke("delay", 0.8f);
         }
     }
     public void checkForCorrect()
@@ -42,5 +41,11 @@ public class CheckOrCrossScript : MonoBehaviour
             mistakes++;
             Debug.Log(mistakes);
         }
+    }
+    public void delay()
+    {
+        RawImage rawImage = GetComponent<RawImage>();
+        rawImage.texture = imageArray[2].texture;
+        Debug.Log("Worked2");
     }
 }
