@@ -26,6 +26,7 @@ public class TimerScript : MonoBehaviour
     {
         if (timeLeft > 0)
         {
+            timesUpText.SetActive(false);
             if (isTimeRunning == true)
             {
                 timeLeft -= Time.deltaTime;
