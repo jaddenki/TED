@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 125937469}
-  - component: {fileID: 125937468}
+  - component: {fileID: 125937471}
   - component: {fileID: 125937470}
   m_Layer: 0
   m_Name: GameObject
@@ -141,22 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &125937468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125937467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730edf2b605a5f142bc26b92a28116ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundFrames:
-  - {fileID: 21300000, guid: 961ed33236d683d43b5023dc78087634, type: 3}
-  - {fileID: 21300000, guid: 895f2a72fd8c1ca40a9146be5c14a085, type: 3}
-  frameInterval: 1
 --- !u!4 &125937469
 Transform:
   m_ObjectHideFlags: 0
@@ -224,6 +208,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &125937471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125937467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bd3df01ad78bc44b118c6b1391990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idle:
+  - {fileID: 21300000, guid: 961ed33236d683d43b5023dc78087634, type: 3}
+  - {fileID: 21300000, guid: 895f2a72fd8c1ca40a9146be5c14a085, type: 3}
+  frameInterval: 0.8
 --- !u!1 &419048339
 GameObject:
   m_ObjectHideFlags: 0

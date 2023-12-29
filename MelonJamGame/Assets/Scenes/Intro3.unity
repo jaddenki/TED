@@ -719,10 +719,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730edf2b605a5f142bc26b92a28116ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundFrames:
+  Idle:
   - {fileID: 21300000, guid: d311cd591432ff3408ed92fe9819294e, type: 3}
   - {fileID: 21300000, guid: aa3db01b9f8dcfc4185a1593fccafada, type: 3}
   - {fileID: 21300000, guid: 519c52540fe7289499663a25674de65d, type: 3}
+  Correct: []
+  Incorrect: []
   frameInterval: 0.3
 --- !u!4 &632511827
 Transform:
