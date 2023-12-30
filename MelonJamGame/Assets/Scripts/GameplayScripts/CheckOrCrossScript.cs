@@ -16,6 +16,7 @@ public class CheckOrCrossScript : MonoBehaviour
     public bool checking = false;
     public bool changeCharm = false;
     public bool hasTimeRunOut = true;
+    public bool mistakeAnim, successAnim = false;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class CheckOrCrossScript : MonoBehaviour
         int_script2 = number2.GetComponent<ImageController>();
         timer_running = number3.GetComponent<TimerScript>();
         displayControl = number2.GetComponent<ImageController>();
+
     }
 
     void Update()
@@ -69,6 +71,8 @@ public class CheckOrCrossScript : MonoBehaviour
         white_charm.colorNumber = 7;
         changeCharm = true;
         hasTimeRunOut = true;
+        successAnim = false;
+        mistakeAnim = false;
     }
 
     void CheckForCorrect()
@@ -76,6 +80,7 @@ public class CheckOrCrossScript : MonoBehaviour
         rawImage = GetComponent<RawImage>();
         if (int_script.colorNumber == int_script2.randomIndex)
         {
+            successAnim = true;
             rawImage.texture = imageArray[0].texture;
             successes++;
             //Success animation should go here i think
@@ -83,6 +88,7 @@ public class CheckOrCrossScript : MonoBehaviour
         }
         else
         {
+            mistakeAnim = true;
             rawImage.texture = imageArray[1].texture;
             mistakes++;
             //Mistake animation should go here i think
