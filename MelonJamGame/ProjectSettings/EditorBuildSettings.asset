@@ -9,23 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/TEDwins.unity
-    guid: b3ad1d90b855b4c41abf905f4e711729
-  - enabled: 1
-    path: Assets/Scenes/PostShiftReject.unity
-    guid: dba27caeddedcb344b2d553a49b2fa2a
-  - enabled: 1
-    path: Assets/Scenes/PostShiftLike.unity
-    guid: d6e07cbbe4d5c774085e29d9efc3069b
-  - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 024a5cf8038f4c847a0bac7e282f4591
   - enabled: 1
-    path: Assets/Scenes/Rejected.unity
-    guid: 1fa430456210b744cbd75fd90315fdc7
-  - enabled: 1
-    path: Assets/Scenes/TedDead.unity
-    guid: 1822988c4e4fae74393cbd5f17a75266
+    path: Assets/Scenes/Intro2.unity
+    guid: 7b93dcf12832a5847b49bb8ab7a8500d
   - enabled: 1
     path: Assets/Scenes/Intro3.unity
     guid: 3e65a4f465c7f034fb545a96c8ba10e6
@@ -33,12 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 7015e27e1f6cdcd4284856026f6430ad
   - enabled: 1
-    path: Assets/Scenes/Intro2.unity
-    guid: 7b93dcf12832a5847b49bb8ab7a8500d
+    path: Assets/Scenes/yay.unity
+    guid: 7308803eeb5934dbbb2386bbeb2b85af
   - enabled: 1
     path: Assets/Scenes/WompWomp.unity
     guid: dc55dc09920d646cbbd157d16f8cbde5
   - enabled: 1
-    path: Assets/Scenes/yay.unity
-    guid: 7308803eeb5934dbbb2386bbeb2b85af
+    path: Assets/Scenes/TedDead.unity
+    guid: 1822988c4e4fae74393cbd5f17a75266
+  - enabled: 1
+    path: Assets/Scenes/PostShiftReject.unity
+    guid: dba27caeddedcb344b2d553a49b2fa2a
+  - enabled: 1
+    path: Assets/Scenes/Rejected.unity
+    guid: 1fa430456210b744cbd75fd90315fdc7
+  - enabled: 1
+    path: Assets/Scenes/PostShiftLike.unity
+    guid: d6e07cbbe4d5c774085e29d9efc3069b
+  - enabled: 1
+    path: Assets/Scenes/TEDwins.unity
+    guid: b3ad1d90b855b4c41abf905f4e711729
   m_configObjects: {}
