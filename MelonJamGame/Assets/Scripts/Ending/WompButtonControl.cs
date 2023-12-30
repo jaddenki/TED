@@ -5,11 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class WompButtonControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float transitionTime = 1f;
     public void toTheFinalScene()
     {
-        SceneManager.LoadScene("TedDead");
+        StartCoroutine(NextScene());
     }
 
+    IEnumerator NextScene()
+    {
 
+        // Waitfor the transition animation to complete
+        yield return new WaitForSeconds(transitionTime);
+
+        // Load the next scene
+        SceneManager.LoadScene("TedDead");
+
+    }
 }
