@@ -6,12 +6,12 @@ public class RejectButton : MonoBehaviour
 {
     public void toReject()
     {
-        SceneManager.LoadScene("Rejected");
+        SceneManager.LoadScene("PostShiftReject");
     }
 
     public void toBag()
     // HE BAGS THE GIRL RAHHHHH
     {
-        SceneManager.LoadScene("TEDwins");
+        SceneManager.LoadScene("PostShiftLike");
     }
 }

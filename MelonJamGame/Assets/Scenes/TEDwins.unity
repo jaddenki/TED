@@ -1236,6 +1236,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 1148803084}
   stringArray:
   - 
+  - Blue is sooooooo charming!
   - thank you so much, ted!!! <3
   timeBtwnChar: 0.04
   timeBtwnWords: 1.5
@@ -1259,7 +1260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Blue is sooooooo charming!
+  m_text: ...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
   m_sharedMaterial: {fileID: -2896773160166199406, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
