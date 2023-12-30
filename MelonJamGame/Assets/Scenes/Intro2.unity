@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1087084567}
-  - component: {fileID: 1087084566}
+  - component: {fileID: 1087084568}
   - component: {fileID: 1087084565}
   m_Layer: 0
   m_Name: TedHead
@@ -594,25 +594,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1087084566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087084564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730edf2b605a5f142bc26b92a28116ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Idle:
-  - {fileID: 21300000, guid: 7ac9c7a9478274a47bcced41817dedfe, type: 3}
-  - {fileID: 21300000, guid: c830f061862c219438d74c5de5aa3198, type: 3}
-  - {fileID: 21300000, guid: 4e4f94ab5fec5a14f98cae1351904743, type: 3}
-  Correct: []
-  Incorrect: []
-  frameInterval: 0.3
 --- !u!4 &1087084567
 Transform:
   m_ObjectHideFlags: 0
@@ -628,6 +609,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087084568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087084564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bd3df01ad78bc44b118c6b1391990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idle:
+  - {fileID: 21300000, guid: 7ac9c7a9478274a47bcced41817dedfe, type: 3}
+  - {fileID: 21300000, guid: c830f061862c219438d74c5de5aa3198, type: 3}
+  - {fileID: 21300000, guid: 4e4f94ab5fec5a14f98cae1351904743, type: 3}
+  frameInterval: 0.2
 --- !u!1 &1209576686
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +836,7 @@ MonoBehaviour:
   - ONLY THE COOLEST ROBOT EVER!!!!!!!
   - I work at a bracelet factory, and i MAKE CHARMS FOR BRACELETS
   - BUT SHE ACTUALLY MAKES THE BRACELETS AFTER I MAKE THE CHARMS!
-  - SHE'S SUPER COOl! i WANT TO IMPRESS HER!!!!
+  - SHE'S SUPER COOl! i WANT TO CHARM HER!!!!
   - ...
   - PLEASE HELP ME FINISH MY SHIFT AT THE FACTORY TODAY!!!!
   timeBtwnChar: 0.04
