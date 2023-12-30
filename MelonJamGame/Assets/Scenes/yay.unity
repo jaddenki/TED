@@ -241,7 +241,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 339.91614, y: 152.95357, z: 22.45785}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2009826367}
@@ -1228,8 +1228,8 @@ MonoBehaviour:
   - I know that tia really likes blueberries!
   - What color should I make her bracelet charms?
   - You choose for me!
-  timeBtwnChar: 0.04
-  timeBtwnWords: 1.2
+  timeBtwnChar: 0.03
+  timeBtwnWords: 1
 --- !u!114 &1101465611
 MonoBehaviour:
   m_ObjectHideFlags: 0

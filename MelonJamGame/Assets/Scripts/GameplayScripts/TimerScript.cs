@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
+// using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +20,7 @@ public class TimerScript : MonoBehaviour
         timesUpText.SetActive(false);
         timerBar = GetComponent<UnityEngine.UI.Image>();
         time_off = timeOut.GetComponent<CheckOrCrossScript>();
+        maxTime = 5f;
         timeLeft = maxTime;
     }
 

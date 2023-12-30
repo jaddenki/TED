@@ -825,7 +825,7 @@ MonoBehaviour:
   - '         '
   - '> Next'
   timeBtwnChar: 0.06
-  timeBtwnWords: 3.03
+  timeBtwnWords: 3.4
 --- !u!1 &2025194959
 GameObject:
   m_ObjectHideFlags: 0
