@@ -31,11 +31,11 @@ public class CheckOrCrossScript : MonoBehaviour
     {
         if(mistakes >= 3)
         {
-            SceneManager.LoadScene("WompWomp");
+            StartCoroutine(WompWomp());
         }
         if(successes >= 20)
         {
-            SceneManager.LoadScene("yay");
+            StartCoroutine(yay());
         }
         timer_script = number3.GetComponent<TimerScript>();
         white_charm = number.GetComponent<CharmTest>();
@@ -94,5 +94,17 @@ public class CheckOrCrossScript : MonoBehaviour
             //Mistake animation should go here i think
             Debug.Log("Mistakes: " + mistakes);
         }
+    }
+
+    IEnumerator yay()
+    {
+
+        yield return new WaitForSeconds(1.8f);
+        SceneManager.LoadScene("yay");
+    }
+    IEnumerator WompWomp()
+    {
+        yield return new WaitForSeconds(1.8f);
+        SceneManager.LoadScene("WompWomp");
     }
 }

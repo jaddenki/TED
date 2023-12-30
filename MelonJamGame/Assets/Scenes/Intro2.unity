@@ -777,7 +777,7 @@ MonoBehaviour:
   stringArray:
   - '  '
   - '        '
-  - Fine... But How DO I HELP?
+  - '> Fine. But How DO I HELP?'
   timeBtwnChar: 0.05
   timeBtwnWords: 8.7
 --- !u!1 &1294249391

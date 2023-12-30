@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
   m_sharedMaterial: {fileID: -2896773160166199406, guid: 5a64d95c5b464664a8d905c378a615cd, type: 2}
@@ -274,7 +274,7 @@ MonoBehaviour:
   stringArray:
   - 
   - '           '
-  - Who is Tia??
+  - '> Who is Tia?'
   timeBtwnChar: 0.05
   timeBtwnWords: 6.2
 --- !u!1 &127022373
