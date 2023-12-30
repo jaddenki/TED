@@ -78,12 +78,14 @@ public class CheckOrCrossScript : MonoBehaviour
         {
             rawImage.texture = imageArray[0].texture;
             successes++;
+            //Success animation should go here i think
             Debug.Log("Successes: " + successes);
         }
         else
         {
             rawImage.texture = imageArray[1].texture;
             mistakes++;
+            //Mistake animation should go here i think
             Debug.Log("Mistakes: " + mistakes);
         }
     }
