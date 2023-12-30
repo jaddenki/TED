@@ -22,23 +22,24 @@ public class BackgroundAnimation : MonoBehaviour
     void NextFrame()
     {
   
-        // Change the sprite to the next frame based on the conditions
+        // condition for the correct animation
         if (Input.GetKey(KeyCode.C))
         {
             spriteRenderer.sprite = Correct[currentFrameIndex];
             Debug.Log("I press C");
             poo = 9;
         }
+        // condition for the incorrect animation
         else if (Input.GetKey(KeyCode.M))
         {
             spriteRenderer.sprite = Incorrect[currentFrameIndex];
             Debug.Log("I pres M");
-            poo = 8;
+            poo = 9;
         }
         else
         {
             spriteRenderer.sprite = Idle[currentFrameIndex];
-            poo = 3;
+            poo = 9;
         }
 
         // Move to the next frame index
